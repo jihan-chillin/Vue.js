@@ -1,24 +1,2 @@
-# vue-default
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# vue.js 공부 
+##### [ 공부 필기 ] (https://tame-robin-33f.notion.site/Vue-js-b9b1793fb31145b3b6702d1a14db0d48)
