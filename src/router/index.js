@@ -48,6 +48,11 @@ const routes = [
     name: 'Example',
     component: () => import(/* webpackChunkName: "basic" */ '../views/Example.vue')
  
+  },{
+    path: '/rendering',
+    name: 'ListRendering',
+    component: () => import(/* webpackChunkName: "basic" */ '../views/ListRendering.vue')
+ 
   }
 
 
