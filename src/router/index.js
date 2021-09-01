@@ -4,7 +4,8 @@ import Home from '../views/Home.vue'
 // import About from '../views/About.vue'
 import Computed from '../views/Computed.vue'
 import Watch from '../views/Watch.vue'
-import Inquire from '../views/Inquire.vue'
+import Search from '../views/Search.vue'
+import Save from '../views/Save.vue'
 
 const routes = [
   {
@@ -69,9 +70,13 @@ const routes = [
     name : 'Watch',
     component : Watch
   },{
-    path : '/inquire',
-    name : 'Inquire',
-    component : Inquire
+    path : '/search',
+    name : 'Search',
+    component : Search
+  },{
+    path : '/save',
+    name : 'Save',
+    component : Save
   }
 ]
 
