@@ -53,8 +53,12 @@ const routes = [
     name: 'Rendering',
     component: () => import(/* webpackChunkName: "basic" */ '../views/Rendering.vue')
  
+  },{
+    path: '/event',
+    name: 'EventTest',
+    component: () => import(/* webpackChunkName: "basic" */ '../views/EventTest.vue')
+ 
   }
-
 
 ]
 
