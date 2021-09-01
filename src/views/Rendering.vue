@@ -1,6 +1,6 @@
 <template>
     <div>
-        <select v-model="city">
+        <!-- <select v-model="city">
             <option :value="city.v" :key="i" v-for="(city,i) in options">{{city.t}}</option>
         </select>
 
@@ -23,7 +23,13 @@
                 </tr>
             </tbody>
 
-        </table>
+        </table> -->
+
+        <!-- <h1 v-if="type=='A'">A</h1>
+        <h1 v-else-if="type=='B'">B</h1>
+        <h1 v-else-if="type=='C'">C</h1>
+        <h1 v-else>other</h1> -->
+        <h1 v-show="bRender">A</h1>
     </div>
 </template>
 <script>
@@ -32,16 +38,18 @@ export default {
     components : {},
     data(){
         return{
-          options : [
-              {v : '02', t : '서울'},
-              {v : '21', t : '부산'},
-              {v : '064', t : '제주'}
-          ],
-          city : '064',
-          productList:[
-              {product_name : '기계식 키보드', price: 25000, delivery_fee : 5000, cate : '전자제품' },
-              {product_name : '마우스', price: 9000, delivery_fee : 5000, cate : '전자제품' }
-          ]
+        //   options : [
+        //       {v : '02', t : '서울'},
+        //       {v : '21', t : '부산'},
+        //       {v : '064', t : '제주'}
+        //   ],
+        //   city : '064',
+        //   productList:[
+        //       {product_name : '기계식 키보드', price: 25000, delivery_fee : 5000, cate : '전자제품' },
+        //       {product_name : '마우스', price: 9000, delivery_fee : 5000, cate : '전자제품' }
+        //   ]
+        // type: 'B'
+        bRender : false
         };
     },
     setup(){},
