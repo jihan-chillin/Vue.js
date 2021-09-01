@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 // import Contact from '../views/Contact.vue'
 // import About from '../views/About.vue'
+import Computed from '../views/Computed.vue'
 
 const routes = [
   {
@@ -57,7 +58,10 @@ const routes = [
     path: '/event',
     name: 'EventTest',
     component: () => import(/* webpackChunkName: "basic" */ '../views/EventTest.vue')
- 
+  },{
+    path : '/computed',
+    name : 'Computed',
+    component : Computed
   }
 
 ]
