@@ -29,7 +29,8 @@ export default {
     methods:{
         saveUserInfo(){
             if(this.userInfo.name == ''){
-                alert("사용자 이름을 입력하시오");
+                // alert("사용자 이름을 입력하시오");
+                return this.$swal('사용자 이름을 입력하시오');
             }
 
             if(this.userInfo.age == 0 || this.userInfo.age == ''){
@@ -44,7 +45,7 @@ export default {
 
             const r = this.saveData(this.userInfo);
             if(r =='S'){
-                alert("사용자 정보가 생성되었습니다.");
+                return alert("사용자 정보가 생성되었습니다.");
             }
         },
         saveData(params){
