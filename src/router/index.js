@@ -3,6 +3,8 @@ import Home from '../views/Home.vue'
 // import Contact from '../views/Contact.vue'
 // import About from '../views/About.vue'
 import Computed from '../views/Computed.vue'
+import Watch from '../views/Watch.vue'
+import Inquire from '../views/Inquire.vue'
 
 const routes = [
   {
@@ -62,8 +64,15 @@ const routes = [
     path : '/computed',
     name : 'Computed',
     component : Computed
+  },{
+    path : '/watch',
+    name : 'Watch',
+    component : Watch
+  },{
+    path : '/inquire',
+    name : 'Inquire',
+    component : Inquire
   }
-
 ]
 
 const router = createRouter({
