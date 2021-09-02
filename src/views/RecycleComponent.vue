@@ -5,8 +5,10 @@
     <!-- ref : id값이랑 비슷한 개념(요소에 접근할 때) -->
     <!-- <button type="button" @click="callChildFunc">부모에 있는 클릭</button> -->
     <!-- <ChildComponent ref ="child_component"/> -->
-    <h1>{{parentMsg}}</h1>
-    <ChildComponent @send-message="sendMessage" />
+    <!-- <h1>{{parentMsg}}</h1>
+    <ChildComponent @send-message="sendMessage" /> -->
+    <button type="button" @click="showData">부모데이터</button>
+    <ChildComponent ref="child_component"/>
     
 </div>
 </template>
@@ -31,14 +33,22 @@ export default {
     mounted() {},
     unmounted(){},
     methods:{
-        callChildFunc(){
-            // this.$refs.child_component.$refs.child_btn.click();
-            // this.$refs.child_component.childFunc();
-            this.$refs.child_component.msg = "부모컴포넌트에서 변경한 메세지";
-        },
-        sendMessage(data){
-            alert(data);
-            this.parentMsg = data;
+        // callChildFunc(){
+        //     // this.$refs.child_component.$refs.child_btn.click();
+        //     // this.$refs.child_component.childFunc();
+        //     this.$refs.child_component.msg = "부모컴포넌트에서 변경한 메세지";
+        // },
+        // sendMessage(data){
+        //     alert(data);
+        //     this.parentMsg = data;
+        // }
+        showData(){
+            alert(this.msg);
+        }
+    },
+    computed:{
+        msg() {
+            return this.$refs.child_component.msg;
         }
     }
 }
