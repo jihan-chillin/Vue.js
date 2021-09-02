@@ -81,6 +81,10 @@ const routes = [
     path: '/serverdata',
     name: 'ServerData',
     component: () => import(/* webpackChunkName: "basic" */ '../views/ServerData.vue')
+  },{
+    path: '/recycle',
+    name: 'RecycleComponent',
+    component: () => import(/* webpackChunkName: "basic" */ '../views/RecycleComponent.vue')
   },
 ]
 
