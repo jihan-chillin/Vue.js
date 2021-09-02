@@ -113,7 +113,12 @@ const routes = [
     path: '/customdirective',
     name: 'CustomDirevtice',
     component: () => import(/* webpackChunkName: "basic" */ '../views/CustomDirevtice.vue')
+  },{
+    path: '/plugins',
+    name: 'Plugins',
+    component: () => import(/* webpackChunkName: "basic" */ '../views/Plugins.vue')
   },
+  
 ]
 
 const router = createRouter({
