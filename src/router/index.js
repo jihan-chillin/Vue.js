@@ -105,6 +105,10 @@ const routes = [
     path: '/compositionapi',
     name: 'CompositionApi3',
     component: () => import(/* webpackChunkName: "basic" */ '../views/CompositionApi3.vue')
+  },{
+    path: '/compositionapiprovide',
+    name: 'CompositionAPIProvide',
+    component: () => import(/* webpackChunkName: "basic" */ '../views/CompositionAPIProvide.vue')
   },
 ]
 
