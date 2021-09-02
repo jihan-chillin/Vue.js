@@ -28,7 +28,8 @@ export default {
     unmounted(){},
     methods:{
         callChildFunc(){
-            this.$refs.child_component.$refs.child_btn.click();
+            // this.$refs.child_component.$refs.child_btn.click();
+            this.$refs.child_component.childFunc();
         }
     }
 }
