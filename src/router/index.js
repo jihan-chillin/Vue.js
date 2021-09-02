@@ -85,6 +85,10 @@ const routes = [
     path: '/recycle',
     name: 'RecycleComponent',
     component: () => import(/* webpackChunkName: "basic" */ '../views/RecycleComponent.vue')
+  },{
+    path: '/slot',
+    name: 'SlotUseModalLayout',
+    component: () => import(/* webpackChunkName: "basic" */ '../views/SlotUseModalLayout.vue')
   },
 ]
 
