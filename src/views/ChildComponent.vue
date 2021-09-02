@@ -1,8 +1,10 @@
 <template>
-    <div>likes : {{likes}}</div>
+    <!-- <div>likes : {{likes}}</div>
     <div>isOk : {{isOk}}</div>
     <div>author name : {{author.name}}</div>
-    <div>author company : {{author.company}}</div>
+    <div>author company : {{author.company}}</div> -->
+
+    <button type="button" @click="childFunc" ref="child_btn">자식에 있는 클릭</button>
 </template>
 <script>
 export default {
@@ -36,7 +38,9 @@ export default {
     },
     unmounted(){},
     methods:{
-
+        childFunc(){
+            alert('부모컴퍼넌트에서 직접 발생시킴');
+        }
     }
 }
 </script>
