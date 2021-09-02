@@ -117,6 +117,10 @@ const routes = [
     path: '/plugins',
     name: 'Plugins',
     component: () => import(/* webpackChunkName: "basic" */ '../views/Plugins.vue')
+  },{
+    path: '/storeaccess',
+    name: 'StoreAccess',
+    component: () => import(/* webpackChunkName: "basic" */ '../views/StoreAccess.vue')
   },
   
 ]

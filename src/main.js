@@ -5,6 +5,7 @@ import VueSweetalert2 from 'vue-sweetalert2'
 import 'sweetalert2/dist/sweetalert2.min.css'
 import mixins from './views/mixins'
 import i18nPlugin from './plugins/i18n'
+import store from './store'
 
 const i18nStrings = {
     en :{
@@ -20,6 +21,7 @@ const i18nStrings = {
 const app = createApp(App);
 app.use(router)
 app.mixin(mixins)
+app.use(store)
 app.use(VueSweetalert2)
 app.use(i18nPlugin, i18nStrings)
 app.mount('#app')
