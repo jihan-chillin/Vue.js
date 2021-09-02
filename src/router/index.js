@@ -109,6 +109,10 @@ const routes = [
     path: '/compositionapiprovide',
     name: 'CompositionAPIProvide',
     component: () => import(/* webpackChunkName: "basic" */ '../views/CompositionAPIProvide.vue')
+  },{
+    path: '/customdirective',
+    name: 'CustomDirevtice',
+    component: () => import(/* webpackChunkName: "basic" */ '../views/CustomDirevtice.vue')
   },
 ]
 

@@ -10,3 +10,8 @@ app.use(router)
 app.mixin(mixins)
 app.use(VueSweetalert2)
 app.mount('#app')
+app.directive('focus',{
+    mounted(el){
+        el.focus();
+    }
+})
