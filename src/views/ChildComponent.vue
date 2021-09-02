@@ -4,7 +4,8 @@
     <div>author name : {{author.name}}</div>
     <div>author company : {{author.company}}</div> -->
 
-    <button type="button" @click="childFunc" ref="child_btn">자식에 있는 클릭</button>
+    <!-- <button type="button" @click="childFunc" ref="child_btn">자식에 있는 클릭</button> -->
+    <h1>{{msg}}</h1>
 </template>
 <script>
 export default {
@@ -28,7 +29,7 @@ export default {
     components : {},
     data(){
         return{
-          sampleData : ''
+          msg : '자식에 있는 메세지'
         };
     },
     setup(){},
