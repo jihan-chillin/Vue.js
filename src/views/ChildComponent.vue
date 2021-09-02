@@ -5,7 +5,10 @@
     <div>author company : {{author.company}}</div> -->
 
     <!-- <button type="button" @click="childFunc" ref="child_btn">자식에 있는 클릭</button> -->
-    <h1>{{msg}}</h1>
+    <!-- <h1>{{msg}}</h1> -->
+    <div>
+        <button type="button" @click="sendFromChild">자식 컴포넌트 버튼</button>
+    </div>
 </template>
 <script>
 export default {
@@ -29,7 +32,7 @@ export default {
     components : {},
     data(){
         return{
-          msg : '자식에 있는 메세지'
+          msg : '자식 컴포넌트에로부터 보내는 메세지'
         };
     },
     setup(){},
@@ -41,6 +44,9 @@ export default {
     methods:{
         childFunc(){
             alert('부모컴퍼넌트에서 직접 발생시킴');
+        },
+        sendFromChild(){
+            this.$emit('send-message', this.msg);
         }
     }
 }
