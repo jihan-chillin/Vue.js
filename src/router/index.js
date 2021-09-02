@@ -97,6 +97,14 @@ const routes = [
     path: '/mixin',
     name: 'MixinTest',
     component: () => import(/* webpackChunkName: "basic" */ '../views/MixinTest.vue')
+  },{
+    path: '/calculator',
+    name: 'Calculator',
+    component: () => import(/* webpackChunkName: "basic" */ '../views/Calculator.vue')
+  },{
+    path: '/compositionapi',
+    name: 'CompositionApi3',
+    component: () => import(/* webpackChunkName: "basic" */ '../views/CompositionApi3.vue')
   },
 ]
 
